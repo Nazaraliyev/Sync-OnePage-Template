@@ -1,3 +1,17 @@
 #screens{
     background-color: $bg-color-2;
+    div.screen-item{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 90%;
+        }
+        .owl-nav{
+            .owl-prev{
+                span{
+                    width: 20px;
+                }
+            }
+        }
+    }
 }

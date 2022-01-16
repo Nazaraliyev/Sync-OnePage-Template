@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- jquery Cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/owl/owl.carousel.min.css" />
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -338,14 +347,27 @@
         </div>
       </section>
       <section id="screens">
-        <div class="owl-carousel owl-theme">
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
-          <div>Your Content</div>
+        <div class="MyContainer">
+          <div class="owl-carousel owl-theme">
+            <div class="screen-item">
+              <img src="/img/slider/slider-1.jpg" alt="">
+            </div>
+            <div class="screen-item">
+              <img src="/img/slider/slider-2.jpg" alt="">
+            </div>
+            <div class="screen-item">
+              <img src="/img/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="screen-item">
+              <img src="/img/slider/slider-4.jpg" alt="">
+            </div>
+            <div class="screen-item">
+              <img src="/img/slider/slider-5.jpg" alt="">
+            </div>
+            <div class="screen-item">
+              <img src="/img/slider/slider-6.jpg" alt="">
+            </div>
+          </div>
         </div>
       </section>
       <section id="testimonal" class="MyContainer">
@@ -576,5 +598,18 @@
     <p id="copyright" class="text-center">
       Copyright © 2045 All rights reserved - By Inovatik
     </p>
+
+    <script src="/owl/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items : 5,
+          autoplay : true,
+          autoplayTimeout : 2000,
+          loop : true,
+          nav : true
+        });
+      });
+    </script>
   </body>
 </html>
