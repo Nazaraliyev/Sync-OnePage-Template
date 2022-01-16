@@ -49,7 +49,7 @@
         <div id="nav-wrapper" class="row align-items-center">
           <div id="logo" class="col-6">
             <a href="#page-start">
-            <img src="/img/logo.svg" alt="Sync logo" />
+              <img src="/img/logo.svg" alt="Sync logo" />
             </a>
           </div>
           <div id="burger-menu" class="col-6">
@@ -65,7 +65,9 @@
               <li><a href="#screens">screen</a></li>
               <li><a href="#">extra</a></li>
               <li>
-                <a href="#app" class="btn btn-outline-danger rounded-pill border-2"
+                <a
+                  href="#app"
+                  class="btn btn-outline-danger rounded-pill border-2"
                   >download</a
                 >
               </li>
@@ -353,22 +355,22 @@
         <div class="MyContainer">
           <div class="owl-carousel owl-theme">
             <div class="screen-item">
-              <img src="/img/slider/slider-1.jpg" alt="">
+              <img src="/img/slider/slider-1.jpg" alt="" />
             </div>
             <div class="screen-item">
-              <img src="/img/slider/slider-2.jpg" alt="">
+              <img src="/img/slider/slider-2.jpg" alt="" />
             </div>
             <div class="screen-item">
-              <img src="/img/slider/slider-3.jpg" alt="">
+              <img src="/img/slider/slider-3.jpg" alt="" />
             </div>
             <div class="screen-item">
-              <img src="/img/slider/slider-4.jpg" alt="">
+              <img src="/img/slider/slider-4.jpg" alt="" />
             </div>
             <div class="screen-item">
-              <img src="/img/slider/slider-5.jpg" alt="">
+              <img src="/img/slider/slider-5.jpg" alt="" />
             </div>
             <div class="screen-item">
-              <img src="/img/slider/slider-6.jpg" alt="">
+              <img src="/img/slider/slider-6.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -605,14 +607,30 @@
     <script src="/owl/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
+        var goUp = $("#go-up-btn");
+        goUp.hide();
         $(".owl-carousel").owlCarousel({
-          items : 5,
-          autoplay : true,
-          autoplayTimeout : 2000,
-          loop : true,
-          nav : true
+          items: 5,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          loop: true,
+          nav: true,
+        });
+
+        $(window).scroll(() => {
+          var scroll = $(this).scrollTop();
+
+          if (scroll > 200) {
+            goUp.show();
+
+          } else {
+            goUp.hide();
+
+          }
         });
       });
     </script>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
