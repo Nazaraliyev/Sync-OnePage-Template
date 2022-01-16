@@ -361,6 +361,7 @@ header nav #menu li:last-child a:hover {
 
 #screens {
   background-color: #E8EFF6;
+  position: relative;
 }
 
 #screens div.screen-item {
@@ -376,8 +377,29 @@ header nav #menu li:last-child a:hover {
   width: 90%;
 }
 
-#screens div.screen-item .owl-nav .owl-prev span {
-  width: 20px;
+#screens .owl-nav {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+#screens .owl-nav button {
+  position: absolute;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+#screens .owl-nav button span {
+  color: #333333bd;
+}
+
+#screens .owl-nav .owl-prev {
+  left: -50px;
+  top: 50%;
+}
+
+#screens .owl-nav .owl-next {
+  right: -50px;
+  top: 50%;
 }
 
 #testimonal h2 {
