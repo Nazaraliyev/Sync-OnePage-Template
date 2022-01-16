@@ -44,11 +44,13 @@
     <title>Sync</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="MyContainer">
         <div id="nav-wrapper" class="row align-items-center">
           <div id="logo" class="col-6">
+            <a href="#page-start">
             <img src="/img/logo.svg" alt="Sync logo" />
+            </a>
           </div>
           <div id="burger-menu" class="col-6">
             <button class="my-btn">download</button>
@@ -58,12 +60,12 @@
               id="menu"
               class="d-flex justify-content-between align-items-center"
             >
-              <li><a href="#">description</a></li>
-              <li><a href="#">features</a></li>
-              <li><a href="#">screen</a></li>
+              <li><a href="#description">description</a></li>
+              <li><a href="#features">features</a></li>
+              <li><a href="#screens">screen</a></li>
               <li><a href="#">extra</a></li>
               <li>
-                <a href="#" class="btn btn-outline-danger rounded-pill border-2"
+                <a href="#app" class="btn btn-outline-danger rounded-pill border-2"
                   >download</a
                 >
               </li>
@@ -73,6 +75,7 @@
       </nav>
     </header>
     <main>
+      <a id="go-up-btn" href="#header"><i class="fas fa-chevron-up"></i></a>
       <section id="page-start">
         <div class="rectangle"></div>
         <div class="circle"></div>

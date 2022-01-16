@@ -75,6 +75,37 @@ body {
   font-size: 14px;
 }
 
+#go-up-btn {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333bd;
+  border-radius: 50%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+#go-up-btn i {
+  color: #fff;
+  font-weight: bold;
+}
+
+#go-up-btn:hover {
+  background-color: #000;
+}
+
 header {
   padding: 30px 0;
 }
