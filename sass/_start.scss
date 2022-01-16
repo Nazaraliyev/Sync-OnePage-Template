@@ -1,32 +1,18 @@
 #page-start{
     position: relative;
     padding-top: 0;
+    
     .rectangle{
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        background-color: $green-color;
-        transform: rotate(45deg);
         left: 300px;
         // top: 100px;
     }
 
     .circle-outline{
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        border: 8px solid $blue-color;
-        border-radius: 50%;
         top: 300px;
         left: 150px;
     }
 
     .circle{
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        background-color: $yellow-color;
-        border-radius: 50%;
         top: 100px;
         right: 150px;
     }
